@@ -30,8 +30,8 @@
         {
             btnVG = new Button();
             btnGenre = new Button();
-            btnRate = new Button();
             label1 = new Label();
+            btnRate2 = new Button();
             SuspendLayout();
             // 
             // btnVG
@@ -52,15 +52,7 @@
             btnGenre.TabIndex = 1;
             btnGenre.Text = "Generos";
             btnGenre.UseVisualStyleBackColor = true;
-            // 
-            // btnRate
-            // 
-            btnRate.Location = new Point(183, 35);
-            btnRate.Name = "btnRate";
-            btnRate.Size = new Size(94, 23);
-            btnRate.TabIndex = 2;
-            btnRate.Text = "Calificaciones";
-            btnRate.UseVisualStyleBackColor = true;
+            btnGenre.Click += btnGenre_Click;
             // 
             // label1
             // 
@@ -71,13 +63,23 @@
             label1.TabIndex = 3;
             label1.Text = "Seleccione lo que desee ver";
             // 
+            // btnRate2
+            // 
+            btnRate2.Location = new Point(183, 35);
+            btnRate2.Name = "btnRate2";
+            btnRate2.Size = new Size(99, 23);
+            btnRate2.TabIndex = 4;
+            btnRate2.Text = "Calificaciones";
+            btnRate2.UseVisualStyleBackColor = true;
+            btnRate2.Click += btnRate2_Click;
+            // 
             // Hub
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(294, 78);
+            Controls.Add(btnRate2);
             Controls.Add(label1);
-            Controls.Add(btnRate);
             Controls.Add(btnGenre);
             Controls.Add(btnVG);
             Name = "Hub";
@@ -90,7 +92,7 @@
 
         private Button btnVG;
         private Button btnGenre;
-        private Button btnRate;
         private Label label1;
+        private Button btnRate2;
     }
 }

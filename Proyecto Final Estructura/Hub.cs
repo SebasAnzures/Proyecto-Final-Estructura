@@ -23,5 +23,26 @@ namespace Proyecto_Final_Estructura
             Juegos form2 = new Juegos();
             form2.Show();
         }
+
+        private void btnGenre_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Generos form2 = new Generos();
+            form2.Show();
+        }
+
+        private void btnRate_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Calificaciones form2 = new Calificaciones();
+            form2.Show();
+        }
+
+        private void btnRate2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Calificaciones form2 = new Calificaciones();
+            form2.Show();
+        }
     }
 }
